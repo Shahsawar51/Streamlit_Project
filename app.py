@@ -97,6 +97,4 @@ else:
     user_selceted = st.sidebar.selectbox('Startup', sorted(set(df['investors'].str.split(',').sum())))
     btn2 = st.sidebar.button('Find Investors Detail')
     if btn2:
-        load_investor_details(user_selceted)
-        
-    
+        load_investor_details(user_selceted)     
